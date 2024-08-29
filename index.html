@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+		<nav id="navbar">
+			<header id="navbar-header">Java Documentation</header>
+			<ul>
+				<li class="nav-buttons">
+					<a class="nav-link" href="#introduction">Introduction</a>
+				</li>
+
+				<li class="nav-buttons">
+					<a class="nav-link" href="#conditional_statements">Conditional Statements</a>
+				</li>
+
+				<li class="nav-buttons">
+					<a class="nav-link" href="#arrays">Arrays</a>
+				</li>
+
+				<li class="nav-buttons">
+					<a class="nav-link" href="#while_loops">While Loops</a>
+				</li>
+
+				<li class="nav-buttons">
+					<a class="nav-link" href="#for_loops">For Loops</a>
+				</li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section id="introduction" class="main-section">
+				<header>Introduction</header>
+				<p>
+					Welcome to our Java Documentation Portal. Dive into Java, the 
+					robust and versatile programming language that powers millions 
+					of applications. Our resources cater to both newcomers and experienced developers. 
+					Explore the intricacies of the Java Standard Library, JVM, and 
+					related frameworks. Stay updated with the latest releases and 
+					enhance your coding journey.
+				</p>
+			</section>
+			<section id="conditional_statements" class="main-section">
+				<header>Conditional Statements</header>
+				<p>
+					In Java, controlling the flow of your program is vital, and this is achieved using conditional statements like <b> if, else if, and else. </b>
+					The if statement evaluates a condition, executing its block of code when true. If additional conditions need checking, the else if comes into 
+					play, only being evaluated if previous conditions are false. The else clause serves as a catch-all, executing its block when no prior 
+					conditions hold true. Together, these statements offer a structured and intuitive approach to decision-making in your Java programs.
+				</p>
+				<h3>Examples</h3>
+				
+				<p>If statement:</p>
+				<code>
+					int age = 25; <br/>
+					if (age >= 18) { <br/>
+						&emsp; System.out.println("You are an adult."); <br/>
+					}
+				</code>
+				
+				<p>Else statement:</p>
+				<code>
+					int temperature = 28; <br/>
+					if (temperature > 30) { <br/>
+						&emsp; System.out.println("It's hot outside."); <br/>
+					} else { <br/>
+						&emsp; System.out.println("It's not too hot."); <br/>
+					}
+				</code>
+
+				<p>Else-if</p>
+				<code>
+					int score = 75; <br/>
+					if (score >= 90) { <br/>
+						&emsp;	System.out.println("You got an A."); <br/>
+					} else if (score >= 80) { <br/>
+						&emsp;	System.out.println("You got a B."); <br/>
+					} else if (score >= 70) { <br/>
+						&emsp;	System.out.println("You got a C."); <br/>
+					} else { <br/>
+						&emsp;	System.out.println("You need to improve your score."); <br/>
+					}
+				</code>
+			</section>
+			<section id="arrays" class="main-section">
+				<header>Arrays</header>
+				<p>
+					In Java, an array is a fundamental data structure that allows you to store a collection of elements of the same data type under a single variable name. 
+					Arrays provide a way to efficiently manage and access multiple values of the same type in a contiguous block of memory. Each element in an array is 
+					accessed using an index, which starts from 0 for the first element and increments by one for each subsequent element. Arrays are particularly useful 
+					when you need to work with a fixed number of elements and want to access them using their positions within the collection.
+				</p>
+
+				<h3>Declaration</h3>
+				<p>
+					To declare an array in Java, you need to specify the data type of the elements it will hold, followed by the array variable name and square brackets. 
+					The general syntax for declaring an array is:
+				</p>
+				<code>
+					dataType[] arrayName; <br>
+					// For example to declare an array that holds integers <br>
+					int[] numbers;
+				</code>
+
+				<h3>Initialisation</h3>
+				<p>There are a few ways to initialize an array in Java. 
+					One common way is to specify the size of the array and assign values to its elements using curly braces and commas:
+				</p>
+				<code>
+					int[] numbers = {1, 2, 3, 4, 5};
+				</code>
+				<p>You can also initialize an array using the new keyword along with the size of the array:</p>
+				<code>
+					int[] numbers = new int[5]; // Creates an array of 5 integers
+				</code>
+
+				<h3>Array Properties</h3>
+				<p>Arrays in Java have a few important properties:</p>
+				<ul>
+					<li>
+						<b>Fixed Size:</b> The size of an array is fixed upon initialization, and it cannot be changed during the program's execution. 
+						To accommodate a different number of elements, you would need to create a new array with the desired size.
+					</li>
+
+					<li>
+						<b>Contiguous Memory:</b> Elements in an array are stored in contiguous memory locations. This characteristic leads to efficient 
+						memory usage and allows for constant-time access to elements using their indices.
+					</li>
+
+					<li>
+						<b>Homogeneous Elements:</b> Arrays can only hold elements of the same data type. If you need to store different data types, 
+						you would typically use arrays of objects or other collection 
+					</li>
+
+					<li>
+						<b>Zero-Based Indexing:</b> Array indices start from 0. The index of the last element in an array of size n is n - 1.
+					</li>
+
+					<li>
+						<b>Length Property:</b> Arrays have a built-in length property that gives you the number of elements in the array. 
+						It's particularly useful when iterating over array elements.
+					</li>
+				</ul>
+			</section>
+			<section id="while_loops" class="main-section">
+				<header>While Loops</header>
+				<p>
+					In Java, a while loop is a fundamental control structure that allows you to repeatedly execute a block of code as long as a specified condition remains true. 
+					It provides a way to automate repetitive tasks, iterating over a sequence of actions until the condition evaluates to false. 
+					The while loop is especially useful when the number of iterations is not known beforehand and depends on dynamic conditions.
+				</p>
+				<h3>Syntax</h3>
+				<code>
+				while (condition) { <br>
+					&emsp; // Code to be executed repeatedly as long as the condition is true <br>
+				}
+				</code>
+				<h3>Example</h3>
+				<code>
+					int count = 0; <br>
+					while (count 	&lt; 5) { <br>
+						&emsp;	System.out.println("Count: " + count); <br>
+						&emsp;	count++; // Increment the count for the next iteration <br>
+					}
+				</code>
+			</section>
+			<section id="for_loops" class="main-section">
+				<header>For Loops</header>
+				<p>
+					In Java, a for loop is a versatile control structure designed to efficiently execute a block of code repeatedly for a predetermined number of iterations. 
+					For loops are particularly useful when you know the exact number of times you want to repeat an action. 
+					They provide a compact and structured way to manage loops while maintaining control over initialization, condition checking, and iteration updates.
+				</p>
+				<h3>Syntax</h3>
+				<code>
+				for (initialization; condition; update) { <br>
+					&emsp; // Code to be executed in each iteration <br>
+				}
+				</code>
+				<h3>Example</h3>
+				<code>
+				for (int i = 0; i &lt; 5; i++) { <br>
+					&emsp; System.out.println("Iteration: " + i); <br>
+				}
+				</code>
+				<p>
+					In this example, the for loop iterates five times. The loop starts with i being 0, and in each iteration, it checks if i is less than 5. 
+					If true, it executes the code block and then increments i by 1. The loop stops when i becomes 5.
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
